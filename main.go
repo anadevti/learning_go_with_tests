@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
-func Hello() string {
-	return "Primeiro teste da aninha com go!!"
+const test_const = "Teste, "
+
+func Hello(name string) string {
+	return test_const + name
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("Golang!"))
 }
